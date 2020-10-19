@@ -595,3 +595,22 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+container{
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  margin-top: -500px;
+  margin-left: 400px;
+  z-index: 0;
+}
+opening{
+  color: white;
+  font: 400 18px Rubik, sans-serif;
+  font-size: 50px;
+}
+
+opening2{
+
+  color: white;
+}
