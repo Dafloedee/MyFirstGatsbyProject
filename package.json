@@ -20,7 +20,12 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "babel-plugin-styled-components": "^1.11.1",
+    "gatsby-background-image": "^1.1.2",
+    "gatsby-plugin-styled-components": "^3.3.14",
+    "prettier": "2.1.2",
+    "styled-components": "^5.2.0",
+    "typeface-rubik": "^1.1.13"
   },
   "keywords": [
     "gatsby"
