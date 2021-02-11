@@ -5,9 +5,9 @@ require("typeface-rubik");
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: black;
   display: inline-block;
-  font: 400 18px Rubik, sans-serif;
+  font: 600 16px Rubik, sans-serif;
   float:right;
   padding-bottom : 20px;
   white-space: nowrap;
@@ -15,6 +15,7 @@ const NavItem = styled(Link)`
   margin-top: -10px;
   transition: all 200ms ease-in;
   position: relative;
+  
 
   :hover {
     color: goldenrod;
@@ -25,7 +26,7 @@ const NavItem = styled(Link)`
 
   @media (max-width: 768px) {
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 6;
   }
 `
@@ -35,9 +36,8 @@ const NavItem = styled(Link)`
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">Contact Me</NavItem>
-      <NavItem to="/404">My Projects</NavItem>
-      <NavItem to="/">About Me</NavItem>
+      <NavItem to="/">Kontak Saya</NavItem>
+      <NavItem to="/404">Tulisan</NavItem>
     </>
   )
 }

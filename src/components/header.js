@@ -5,6 +5,7 @@ import NavbarLinks from "./navbarLinks";
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      boxShadow:`0 4px 6px -6px`,
       background: `transparent`,
       marginBottom: `1.45rem`,
     }}
@@ -13,11 +14,20 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `2rem`,
+      
       }}
     >
-      
-        <NavbarLinks></NavbarLinks>
+      <div
+      style={{
+        position: `relative`,
+        zIndex: 6,
+        right:300,
+        margin: `0 auto`,
+        maxWidth: 960,
+        padding: `2rem`,
+      }}
+    ><NavbarLinks></NavbarLinks></div>
+        
 
     </div>
   </header>

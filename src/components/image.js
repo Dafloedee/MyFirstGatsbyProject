@@ -15,18 +15,22 @@ import styled from "styled-components"
  */
 
 const Imgs = styled(Img)`
-max-width:70%;
-background-position: center;
+  max-width:100px;
+  
+  max-height:30%;
+  position: relative;
+  box-sizing: border-box;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  border-radius: 50%;
   
 `
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "Amano-Hina.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
